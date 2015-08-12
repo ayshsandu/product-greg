@@ -641,7 +641,7 @@
         </fileSet>
 	<fileSet>
             <directory>src/main/resources/carbon-home/conf</directory>
-            <outputDirectory>${project.artifactId}-${product.greg.version}/repository/conf/security/</outputDirectory>
+            <outputDirectory>${project.artifactId}-${product.greg.version}/repository/conf/identity/</outputDirectory>
             <includes>
                 <include>**/sso-idp-config.xml</include>
             </includes>
@@ -889,7 +889,7 @@
         <!-- copy identity-mgt.properties-->
         <file>
             <source>
-                ../p2-profile-gen/target/wso2carbon-core-${carbon.kernel.version}/repository/conf/security/identity-mgt.properties
+                ../p2-profile-gen/target/wso2carbon-core-${carbon.kernel.version}/repository/conf/identity/identity-mgt.properties
             </source>
             <outputDirectory>${pom.artifactId}-${pom.version}/repository/conf/security</outputDirectory>
             <filtered>true</filtered>
